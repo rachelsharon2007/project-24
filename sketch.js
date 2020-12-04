@@ -19,6 +19,15 @@ function setup() {
    dustbinobject = new dustbin(1200,650);
    groundobject = new dustbin(width/2,670,width,20);
 
+	var render = Render.create({
+	  element: document.body,
+	  engine: engine,
+	  options: {
+	    width: 1200,
+	    height: 700,
+	    wireframes: false
+	  }
+	});
 
 	Engine.run(engine);
   
